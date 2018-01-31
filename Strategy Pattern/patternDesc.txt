@@ -1,0 +1,10 @@
+Strategy Pattern is a pattern with a family of algorithm where each algorithm in a family is interchangable. The Pattern allows for runtime change of an algorithm.
+The Pattern delegates work to an interface instead of being implemented in the existing class.
+In the example, QuackBehaviors and FlyBehaviours are families of algorithms, in where they are not defined, they specifiy the type of algorithms the family provides.
+NoQuack, Quack... are algorithms as they provide the implementation.
+The Host class uses a pointer to the class, the pointer is changed to the needed algorithm in the family at runtime.
+
+
+Pattern is best with :
+ - Selecting the most efficient algorithm (Which sorting function to use, Insertion sort or Merge Sort if all but two elements are already sorted) but also applies to behaviours as in the example.
+ - If Inheritence is the incorrect solution if the child's functions changes or is not required (noQuack)
