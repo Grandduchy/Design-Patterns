@@ -1,0 +1,5 @@
+The Observer pattern is where subjects can notify oberservers of an event/update.
+
+E.g. - Signals and Slots in GUI programming.
+
+Note - I lost the code recreated for this pattern, so a large portion came from here : https://juanchopanzacpp.wordpress.com/2013/02/24/simple-observer-pattern-implementation-c11/
