@@ -1,0 +1,26 @@
+1. Identify the aspects of your application that vary and separate them from what stays the same
+ - Use encapsulation so when something varies, it does not affect the rest of the code.
+ - Later its possible to modify the parts that vary without modifing the parts that do not.
+ - Better Organizes code and leads to less errors.
+
+2. Program to an interface, not an implementation
+ - Use interfaces(or classes with multiple inheritence in c++) to group different classes together that have nothing in common but they do similar things or a similar function
+ - An interface allows you to not care how a common type is implemented.
+ E.g. in java 	List myList = new ArrayList();
+ instead of		ArrayList myList = new ArrayList();
+ with the common type list, functions can easily be modified to use any kind of class that implements list
+ such as Vector, LinkedList, ArrayList...
+
+https://stackoverflow.com/questions/383947/what-does-it-mean-to-program-to-an-interface
+
+3. Favor composition over inheritance
+ - It is NOT an always relationship.
+ - Use composition to easily change behavior and expand flexability
+ - It allows for encapsulation of a family of algorithms into their own set of classes
+ 
+Does TypeB want to expose the complete interface (all public methods no less) of TypeA such that TypeB can be used where TypeA is expected? Indicates Inheritance. 
+
+Does TypeB want only some/part of the behavior exposed by TypeA? Indicates need for Composition.
+
+https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
+ 
