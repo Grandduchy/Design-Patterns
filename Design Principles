@@ -4,7 +4,9 @@
  - Better Organizes code and leads to less errors.
 
 2. Program to an interface, not an implementation
+ - Strive for loosely coupled designs between objects that interact
  - Use interfaces(or classes with multiple inheritence in c++) to group different classes together that have nothing in common but they do similar things or a similar function
+ - Using interfaces makes objects loosely coupled, they can interact, but they have very little knowledge of each other
  - An interface allows you to not care how a common type is implemented.
  E.g. in java 	List myList = new ArrayList();
  instead of		ArrayList myList = new ArrayList();
@@ -24,3 +26,5 @@ Does TypeB want only some/part of the behavior exposed by TypeA? Indicates need 
 
 https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
  
+4. Classes should be open for extension, but closed for modification (Be careful when choosing when to use this principle)
+ - When classes are complete, (most of the time) the code is correct and bug free, however when one modifies it creates problems.
