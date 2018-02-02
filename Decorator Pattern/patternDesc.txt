@@ -1,0 +1,9 @@
+
+
+
+
+
+ - Pattern should only be used if the code is against the abstract component type(base type)
+ - Code relying on the concrete component's type will break the code and you should reconsider the application design
+
+
