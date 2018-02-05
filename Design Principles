@@ -26,5 +26,7 @@ Does TypeB want only some/part of the behavior exposed by TypeA? Indicates need 
 
 https://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
  
+
 4. Classes should be open for extension, but closed for modification (Be careful when choosing when to use this principle)
  - When classes are complete, (most of the time) the code is correct and bug free, however when one modifies it creates problems.
+- A good indicator of breaking this principle is if you are adding some kind of functionality or removing functionality, you have to go into multiple files and folders to modify the change.
