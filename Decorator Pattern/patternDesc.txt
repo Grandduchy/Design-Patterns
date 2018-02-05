@@ -1,9 +1,12 @@
-
-
-
+The Decorator design pattern adds behavior to an object without it affecting the behavior of the object, or the objects of the same class.
+The pattern works by a base type called a component, every object and decorator must inherit from it.
+ Concrete components are the classes that are able to get a decorator to modify/decorate the object.
+ There is an abstract decorator which defines what each decorator must need.
+In the concrete decorator, each decorator must override the functions given from the decorator. In most common cases of decorators, the overriden function is the component's function call and then inside modifying whatever it wants to decorate from the returned super function.
+The effect is similar to a head recursion, where the concrete component is the base case.
 
 
  - Pattern should only be used if the code is against the abstract component type(base type)
  - Code relying on the concrete component's type will break the code and you should reconsider the application design
-
+ - A disadvantage to this pattern is you create lots of files and classes with small code, in the C++ example, if each .hpp file had a .cpp file, there would be ~6 more files just for a few classes
 
